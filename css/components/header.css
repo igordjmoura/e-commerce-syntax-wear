@@ -5,7 +5,8 @@
     top: 20px; /* Distância do topo da tela */
     left: 50%; /* Posiciona o header no centro horizontal da tela */
     transform: translate(-50%); /* Centraliza horizontalmente o header */
-    width: calc(100% - 40px); /* 100% da largura da tela menos 40px (20px de cada lado) */
+    /* width: calc(100% - 40px); 100% da largura da tela menos 40px (20px de cada lado) */
+    width: 1260px; /* Largura fixa para o header */
     z-index: 999; /* Garante que o header fique acima de outros elementos */
 
     display: flex;
