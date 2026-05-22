@@ -43,36 +43,5 @@
     gap: 16px;
 }
 
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    color: #ffffff;
-    font-size: 1.25rem;
-    font-weight: 400;
-    width: 161px;
-    height: 48px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    transition: background-color 0.3s, border 0.3s;
-}
 
-.btn-outline {
-    border: 2px solid #ffffff;
-    background-color: transparent;
-    line-height: 23px;
-}
-
-.btn-filled {
-    background-color: #ffffff;
-    color: #6320A2;
-    font-weight: 500;
-
-}
-
-.btn:hover {
-    background-color: #6320A2;
-    color: #ffffff;
-    border-color: #6320A2;
-}
