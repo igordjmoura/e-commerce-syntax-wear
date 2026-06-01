@@ -1,1 +1,88 @@
 /* product-grid.css */
+.grid-section {
+    display: grid;
+    margin-top: 40px;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas:
+        "highlight highlight sneaker-purple sneaker-purple"
+        "highlight highlight model sneaker-color"
+        "sneaker-white sneaker-white model sneaker-silver";
+}
+
+.card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.highlight {
+    grid-area: highlight;
+    background-image: url('../../images/products/card_imagem.jpg');
+}
+
+.highlight-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 8%;
+    color: #EDEDED;
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 8%;
+    color: #EDEDED;
+    margin-bottom: 20px;
+}
+
+.cta-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.sneaker-purple {
+    grid-area: sneaker-purple;
+    background-image: url('../../images/products/tenis-roxo-verde-grid.jpg');
+
+}
+
+.model {
+    grid-area: model;
+    background-image: url('../../images/products/moca.jpg');
+
+}
+
+.sneaker-color {
+    grid-area: sneaker-color;
+    background-image: url('../../images/products/tenis-colorido-grid.jpg');
+
+}
+
+.sneaker-white {
+    grid-area: sneaker-white;
+    background-image: url('../../images/products/tenis-branco.jpg');
+
+}
+
+.sneaker-silver {
+    grid-area: sneaker-silver;
+    background-image: url('../../images/products/tenis-prata-grid.jpg');
+
+}
