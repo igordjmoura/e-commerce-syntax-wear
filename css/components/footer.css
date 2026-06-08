@@ -128,7 +128,7 @@
 .footer-bottom {
     max-width: 1360px;
     margin: 3rem auto 0;
-    padding-top: 1.8rem;
+    padding: 1.5rem;
     border-top: 1px solid #FFFFFF;
     text-align: center;
     color: #FFFFFF;
@@ -139,14 +139,30 @@
 }
 
 @media (max-width: 1024px) {
+
     .footer-links {
         grid-template-columns: repeat(3, minmax(140px, 1fr));
     }
 }
 
 @media (max-width: 720px) {
+
+    .site-footer{
+        padding: 0 1.25rem;
+    }
     .footer-container {
         flex-direction: column;
+    }
+
+    .footer-newsletter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .newsletter-email{
+        padding: 0;
     }
 
     .footer-links {
